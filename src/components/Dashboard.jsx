@@ -58,7 +58,7 @@ const Dashboard = (props) => {
                   Price
                 </label>
                 <input
-                  type="text"
+                  type="number"
                   class="form-control"
                   id="exampleInputPassword1"
                   name="price"
