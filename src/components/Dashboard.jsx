@@ -87,16 +87,21 @@ const Dashboard = (props) => {
                 <label for="exampleInputPassword1" class="form-label">
                   Category
                 </label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                  name="category"
-                  value={category}
+
+                <select
+                  class="form-select"
                   onChange={(e) => {
                     setCategory(e.target.value);
                   }}
-                />
+                  value={category}
+                  name="category"
+                  aria-label="Default select example"
+                >
+                  <option value="select category">Select Category</option>
+                  <option value="Electronics">Electronics</option>
+                  <option value="Smartphones">Smartphones</option>
+                  <option value="Headphones">Headphones</option>
+                </select>
               </div>
               <div class="mb-3">
                 <input
@@ -117,12 +122,15 @@ const Dashboard = (props) => {
             </form>
           </div>
           <div className="col-md-2 mt-5 me-4 ms-5 d-flex flex-column">
-            <div className={`border d-inline-block ${image ? "" : "p-5"}`}>
+            <div
+              className={`border text-center align-middle d=flex justify-content-center align-items-center`}
+              style={{ width: "250px", height: "250px" }}
+            >
               <img
                 src={image ? URL.createObjectURL(image) : ""}
                 alt="No Image"
-                height="150px"
-                width="150px"
+                height="250px"
+                width="250px"
               />
             </div>
             <button
