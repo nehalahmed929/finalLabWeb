@@ -17,7 +17,7 @@ class ProductsService extends GenericService {
         "content-type": "multipart/form-data",
       },
     };
-    return this.post("products/", data);
+    return this.post("products/", formData, config);
   };
 
   getProduct = (page = 1, perPage = 10) => {

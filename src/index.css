@@ -92,8 +92,8 @@ pre {
 }
 
 .success-box {
-  margin: 50px 0;
-  padding: 10px 10px;
+  margin: 20px 0;
+  padding: 5px 10px;
   border: 1px solid #eee;
   background: #f9f9f9;
 }
@@ -124,7 +124,7 @@ pre {
 
 /* Idle State of the stars */
 .rating-stars ul > li.star > i.fa {
-  font-size: 2.5em; /* Change the size of the stars */
+  font-size: 1em; /* Change the size of the stars */
   color: #ccc; /* Color on idle state */
 }
 
